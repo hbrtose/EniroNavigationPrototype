@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">EniroNautical</string>
+
+    <string name="products">Products</string>
+    <string name="pois">Points of interest</string>
+    <string name="search">Search</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_map_overlays"
+    app:startDestination="@id/nauticalMapFragment">
+
+    <fragment
+        android:id="@+id/nauticalMapFragment"
+        android:name="com.eniro.nautical.map.NauticalMapFragment"
+        android:label="NauticalMapFragment" >
+        <action
+            android:id="@+id/action_nauticalMapFragment_to_routeDetailOverlay"
+            app:destination="@id/routeDetailOverlayFragment" />
+        <action
+            android:id="@+id/action_nauticalMapFragment_to_geoSearchOverlayFragment"
+            app:destination="@id/geoSearchOverlayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/geoSearchOverlayFragment"
+        android:name="com.eniro.nautical.geosearch.GeoSearchOverlayFragment"
+        android:label="GeoSearchOverlayFragment" />
+    <fragment
+        android:id="@+id/routeDetailOverlayFragment"
+        android:name="com.eniro.nautical.route.RouteDetailOverlayFragment"
+        android:label="RouteDetailOverlay" />
+</navigation>

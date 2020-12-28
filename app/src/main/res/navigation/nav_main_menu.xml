@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_main_menu"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.eniro.nautical.menu.MainMenuFragment"
+        android:label="MainMenuFragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_POIListFragment"
+            app:destination="@id/POIListFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_weatherFragment"
+            app:destination="@id/weatherFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_plotterListFragment"
+            app:destination="@id/plotterListFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_productsFragment"
+            app:destination="@id/productsFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_routeListFragment"
+            app:destination="@id/routeListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/POIListFragment"
+        android:name="com.eniro.nautical.poi.POIListFragment"
+        android:label="POIListFragment" />
+    <fragment
+        android:id="@+id/weatherFragment"
+        android:name="com.eniro.nautical.weather.WeatherFragment"
+        android:label="WeatherFragment" />
+    <fragment
+        android:id="@+id/plotterListFragment"
+        android:name="com.eniro.nautical.plotter.PlotterListFragment"
+        android:label="PlotterListFragment" />
+    <fragment
+        android:id="@+id/productsFragment"
+        android:name="com.eniro.nautical.product.ProductsFragment"
+        android:label="ProductsFragment" />
+    <fragment
+        android:id="@+id/routeListFragment"
+        android:name="com.eniro.nautical.route.RouteListFragment"
+        android:label="RouteListFragment" />
+</navigation>
