@@ -17,6 +17,7 @@ android {
         targetSdkVersion(Dependencies.Apps.compileSdk)
         versionCode = Dependencies.Apps.versionCode
         versionName = Dependencies.Apps.versionName
+        vectorDrawables.useSupportLibrary = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
