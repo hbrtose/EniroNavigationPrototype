@@ -17,6 +17,8 @@ object Dependencies {
         const val navigationKtx = "2.1.0"
         const val hilt = "2.28-alpha"
         const val androidxHilt = "1.0.0-alpha01"
+        const val rxKotlin = "2.3.0"
+        const val rxAndroid = "2.1.1"
 
         /* test */
         const val junit = "4.12"
@@ -34,6 +36,9 @@ object Dependencies {
 
         const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigationKtx}"
         const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigationKtx}"
+
+        const val rxKotlin = "io.reactivex.rxjava2:rxkotlin:${Versions.rxKotlin}"
+        const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroid}"
 
         const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
         const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"

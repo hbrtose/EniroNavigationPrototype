@@ -44,6 +44,8 @@ dependencies {
     implementation(Dependencies.Libs.navigationUi)
     implementation(Dependencies.Libs.hilt)
     implementation(Dependencies.Libs.hiltViewModel)
+    implementation(Dependencies.Libs.rxAndroid)
+    implementation(Dependencies.Libs.rxKotlin)
 
     kapt(Dependencies.Libs.androidxHiltCompiler)
     kapt(Dependencies.Libs.hiltCompiler)
