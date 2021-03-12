@@ -1,7 +1,7 @@
 object Dependencies {
     object Apps {
         const val compileSdk = 29
-        const val minSdk = 16
+        const val minSdk = 21
         const val targetSdk = 29
         const val versionCode = 1
         const val versionName = "1.0.0"
@@ -15,8 +15,8 @@ object Dependencies {
         const val coreKtx = "1.3.2"
         const val constraintLayout = "2.0.2"
         const val navigationKtx = "2.1.0"
-        const val hilt = "2.28-alpha"
-        const val androidxHilt = "1.0.0-alpha01"
+        const val hilt = "2.33-beta"
+        const val androidxHilt = "1.0.0-alpha03"
         const val rxKotlin = "2.3.0"
         const val rxAndroid = "2.1.1"
 

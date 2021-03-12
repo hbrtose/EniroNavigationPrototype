@@ -7,10 +7,10 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:supportsRtl="false"
         android:name=".NauticalApplication"
         android:theme="@style/AppTheme">
-        <activity android:name=".map.MapActivity">
+        <activity android:name=".presentation.scene.map.MapActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

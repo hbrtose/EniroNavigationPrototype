@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/mainMenuFragment"
-        android:name="com.eniro.nautical.menu.MainMenuFragment"
+        android:name="com.eniro.nautical.presentation.scene.menu.MainMenuFragment"
         android:label="MainMenuFragment" >
         <action
             android:id="@+id/action_mainMenuFragment_to_POIListFragment"
@@ -25,22 +25,22 @@
     </fragment>
     <fragment
         android:id="@+id/POIListFragment"
-        android:name="com.eniro.nautical.poi.POIListFragment"
+        android:name="com.eniro.nautical.presentation.scene.poi.POIListFragment"
         android:label="POIListFragment" />
     <fragment
         android:id="@+id/weatherFragment"
-        android:name="com.eniro.nautical.weather.WeatherFragment"
+        android:name="com.eniro.nautical.presentation.scene.weather.WeatherFragment"
         android:label="WeatherFragment" />
     <fragment
         android:id="@+id/plotterListFragment"
-        android:name="com.eniro.nautical.plotter.PlotterListFragment"
+        android:name="com.eniro.nautical.presentation.scene.plotter.PlotterListFragment"
         android:label="PlotterListFragment" />
     <fragment
         android:id="@+id/productsFragment"
-        android:name="com.eniro.nautical.product.ProductsFragment"
+        android:name="com.eniro.nautical.presentation.scene.product.ProductsFragment"
         android:label="ProductsFragment" />
     <fragment
         android:id="@+id/routeListFragment"
-        android:name="com.eniro.nautical.route.RouteListFragment"
+        android:name="com.eniro.nautical.presentation.scene.route.list.RouteListFragment"
         android:label="RouteListFragment" />
 </navigation>

@@ -5,7 +5,7 @@
 
     <fragment
         android:id="@+id/nauticalMapFragment"
-        android:name="com.eniro.nautical.map.NauticalMapFragment"
+        android:name="com.eniro.nautical.presentation.scene.map.NauticalMapFragment"
         android:label="NauticalMapFragment" >
         <action
             android:id="@+id/action_nauticalMapFragment_to_routeDetailOverlay"
@@ -15,11 +15,11 @@
             app:destination="@id/geoSearchOverlayFragment" />
     </fragment>
     <fragment
-        android:id="@+id/geoSearchOverlayFragment"
-        android:name="com.eniro.nautical.geosearch.GeoSearchOverlayFragment"
-        android:label="GeoSearchOverlayFragment" />
-    <fragment
         android:id="@+id/routeDetailOverlayFragment"
-        android:name="com.eniro.nautical.route.RouteDetailOverlayFragment"
+        android:name="com.eniro.nautical.presentation.scene.route.detail.RouteDetailOverlayFragment"
         android:label="RouteDetailOverlay" />
+    <fragment
+        android:id="@+id/geoSearchOverlayFragment"
+        android:name="com.eniro.nautical.presentation.scene.geosearch.GeoSearchOverlayFragment"
+        android:label="GeoSearchOverlayFragment" />
 </navigation>
