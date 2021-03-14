@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.eniro.nautical.databinding.ItemMainMenuBinding
-import com.eniro.nautical.util.visible
 
 class MainMenuAdapter(private val items: List<MainMenuItem>): RecyclerView.Adapter<MainMenuAdapter.MainMenuHolder>() {
 
@@ -24,13 +23,8 @@ class MainMenuAdapter(private val items: List<MainMenuItem>): RecyclerView.Adapt
         fun bind(item: MainMenuItem) {
             binding.icon.setImageResource(item.icon)
             binding.title.setText(item.name)
-            item.onSwitch?.let {
-                binding.toggle.setOnCheckedChangeListener { _, isChecked -> it(isChecked) }
-            } ?: binding.toggle.visible(false)
             binding.root.setOnClickListener {
-                if (item.onSwitch == null || binding.toggle.isChecked) {
-                    item.onClick()
-                }
+                item.onClick()
             }
         }
     }

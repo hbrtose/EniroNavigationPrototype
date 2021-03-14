@@ -31,35 +31,15 @@ class MainMenuFragment: BaseViewBindingFragment<FragmentMenuMainBinding, MainMen
 
     private fun getMainMenu(): List<MainMenuItem> {
         return listOf(
-            MainMenuItem(
-                R.mipmap.ic_launcher,
-                R.string.products,
-                { findNavController().navigate(R.id.action_mainMenuFragment_to_productsFragment) },
-                null
-             ),
-            MainMenuItem(
-                R.mipmap.ic_launcher,
-                R.string.pois,
-                { findNavController().navigate(R.id.action_mainMenuFragment_to_POIListFragment) },
-                {
-                    if (it) {
-                        navCoordinatorViewModel.removeOverlays()
-                        navCoordinatorViewModel.showPois()
-                    } else {
-                        navCoordinatorViewModel.hidePois()
-                    }
-                }
-            ),
-            MainMenuItem(
-                R.mipmap.ic_launcher,
-                R.string.search,
-                {
-                    navCoordinatorViewModel.closeDrawer()
-                    navCoordinatorViewModel.removeOverlays()
-                    navCoordinatorViewModel.navigateToOverlay(R.id.action_nauticalMapFragment_to_geoSearchOverlayFragment)
-                },
-                null
-            )
+            MainMenuItem(R.mipmap.ic_launcher, R.string.products) {
+                findNavController().navigate(R.id.action_mainMenuFragment_to_productsFragment) },
+            MainMenuItem(R.mipmap.ic_launcher, R.string.pois) {
+                findNavController().navigate(R.id.action_mainMenuFragment_to_POIListFragment) },
+            MainMenuItem(R.mipmap.ic_launcher, R.string.search) {
+                navCoordinatorViewModel.closeDrawer()
+                navCoordinatorViewModel.removeOverlays()
+                navCoordinatorViewModel.navigateToOverlay(R.id.action_nauticalMapFragment_to_geoSearchOverlayFragment)
+            }
         )
     }
 }

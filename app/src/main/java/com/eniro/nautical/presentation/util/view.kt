@@ -1,4 +1,4 @@
-package com.eniro.nautical.util
+package com.eniro.nautical.presentation.util
 
 import android.view.View
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FloatingActionLabelButton">
+        <attr name="button_color" format="reference"/>
+        <attr name="label" format="reference"/>
+        <attr name="label_color" format="reference"/>
+        <attr name="button_icon" format="reference"/>
+        <attr name="vertical" format="boolean"/>
+    </declare-styleable>
+</resources>
