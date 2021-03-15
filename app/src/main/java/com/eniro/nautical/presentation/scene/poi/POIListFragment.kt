@@ -1,14 +1,18 @@
 package com.eniro.nautical.presentation.scene.poi
 
-import android.view.LayoutInflater
-import android.view.ViewGroup
+import com.eniro.nautical.R
 import com.eniro.nautical.databinding.FragmentPoiListBinding
-import com.eniro.nautical.presentation.base.BaseViewBindingFragment
+import com.eniro.nautical.presentation.base.BaseFragment2
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class POIListFragment: BaseViewBindingFragment<FragmentPoiListBinding, POIListViewModel>(POIListViewModel::class) {
-    override fun bind(inflater: LayoutInflater, container: ViewGroup?): FragmentPoiListBinding {
-        return FragmentPoiListBinding.inflate(inflater, container, false)
+class POIListFragment : BaseFragment2<FragmentPoiListBinding, POIListViewModel>(
+    POIListViewModel::class,
+    FragmentPoiListBinding::bind,
+    R.layout.fragment_poi_list
+) {
+
+    override fun onBind(binding: FragmentPoiListBinding) {
+        binding.poi.text = "POI"
     }
 }

@@ -1,14 +1,9 @@
 package com.eniro.nautical.presentation.scene.product
 
-import android.view.LayoutInflater
-import android.view.ViewGroup
+import com.eniro.nautical.R
 import com.eniro.nautical.databinding.FragmentProductsBinding
-import com.eniro.nautical.presentation.base.BaseViewBindingFragment
+import com.eniro.nautical.presentation.base.BaseFragment3
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
-class ProductsFragment: BaseViewBindingFragment<FragmentProductsBinding, ProductsViewModel>(ProductsViewModel::class) {
-    override fun bind(inflater: LayoutInflater, container: ViewGroup?): FragmentProductsBinding {
-        return FragmentProductsBinding.inflate(inflater, container, false)
-    }
-}
+class ProductsFragment : BaseFragment3<FragmentProductsBinding, ProductsViewModel>(ProductsViewModel::class, R.layout.fragment_products)

@@ -6,4 +6,6 @@ import javax.inject.Inject
 
 @HiltViewModel
 class ProductsViewModel @Inject constructor() : BaseViewModel() {
+
+    val test = "TEST"
 }

@@ -7,6 +7,7 @@ import com.eniro.nautical.util.viewModels
 import kotlin.reflect.KClass
 
 abstract class BaseFragment<T : BaseViewModel>(vm: KClass<T>): Fragment() {
+
     protected val viewModel: T by viewModels(vm)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
